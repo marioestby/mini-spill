@@ -1,0 +1,57 @@
+/* Minimal css reset */
+
+/* Reset box-sizing to border-box for easier layout calculations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins from all elements */
+* {
+  margin: 0;
+}
+
+/* Optional: Set a base font size and line height for the body */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* Improve text rendering on WebKit browsers */
+}
+
+/* Optional: Ensure images and media are responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Optional: Remove default styles from form elements and ensure font inheritance */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Optional: Prevent text overflows in pre-formatted text */
+pre {
+  white-space: pre-wrap;
+}
+
+/* Optional: Improve accessibility for interactive elements */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
