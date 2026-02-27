@@ -48,13 +48,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const gjettOrd = radensBokser.map(boks => boks.value).join("");
 
         console.log("Brukeren gjettet:", gjettOrd);
+        const fasitLower = fasit.toLowerCase();
 
-        if (gjettOrd.toLowerCase() == fasit.toLowerCase()) {
-            console.log("Du har gjettet riktig!");
-            radensBokser.forEach(boks => {
+        
+        radensBokser.forEach((boks, i) => {
+            const bokstav = boks.value.toLowerCase();
+            
+            if (bokstav === fasitLower[i]) {
+                // Riktig bokstav, riktig plass
                 boks.style.backgroundColor = "lightgreen";
-            });
-        }
+            } else if (fasitLower.includes(bokstav)) {
+                // Riktig bokstav, feil plass
+                boks.style.backgroundColor = "yellow";
+            } else {
+                // Bokstaven er ikke i ordet
+                boks.style.backgroundColor = "lightgray";
+            }
+            
+            if (gjettOrd == fasit){
+                console.log("Du har gjettet riktig")
+            }
+            else{
+                alleRuter[index+1].focus();
+            }
+            
+        });
     }
 
 });
