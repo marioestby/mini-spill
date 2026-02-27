@@ -1,0 +1,27 @@
+
+
+
+.brett {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+}
+.rute {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 70px;
+}
