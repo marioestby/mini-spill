@@ -1,0 +1,64 @@
+
+
+ 
+header {
+  background-color: rgb(242, 116, 245);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+
+}
+
+.logo {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  transition: transform 0.2s ease;
+  padding-bottom: 10px;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+
+}
+
+.home-icon {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(10 34 56);
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 200;
+  width: 100%;
+  gap: 15px;
+
+}
+
+section{
+    background-image: url(bilder/bakrun.jpg);
+}
