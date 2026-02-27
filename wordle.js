@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     alleRuter.forEach((rute, index) => {
         rute.addEventListener("keydown", (event) => {
-            if (event.key === "Enter") {
+            if (event.key == "Enter") {
                 if ((index + 1) % 5 == 0) {
                     console.log("Brukeren har gjettet et ord, og er på rute", index + 1)
                     sjekkGjett(index)
@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 else {
                     const nesteRute = alleRuter[index + 1];
                     if (nesteRute) nesteRute.focus();
+                }
+            }
+            if (event.key == "Backspace") {
+                if (alleRuter[index].value === "") {
+                    event.preventDefault();
+                    const forrigeRute = alleRuter[index - 1];
+                    if (forrigeRute) forrigeRute.focus();
                 }
             }
         });
@@ -50,31 +57,34 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Brukeren gjettet:", gjettOrd);
         const fasitLower = fasit.toLowerCase();
 
-        
+
         radensBokser.forEach((boks, i) => {
             const bokstav = boks.value.toLowerCase();
-            
+
             if (bokstav === fasitLower[i]) {
                 // Riktig bokstav, riktig plass
-                boks.style.backgroundColor = "lightgreen";
+                boks.style.backgroundColor = "darkseagreen";
+                boks.style.color = "white"
             } else if (fasitLower.includes(bokstav)) {
                 // Riktig bokstav, feil plass
-                boks.style.backgroundColor = "yellow";
+                boks.style.backgroundColor = "gold";
+                boks.style.color = "white"
             } else {
                 // Bokstaven er ikke i ordet
-                boks.style.backgroundColor = "lightgray";
+                boks.style.backgroundColor = "gray";
+                boks.style.color = "white"
             }
-            
-            if (gjettOrd == fasit){
+
+            if (gjettOrd == fasit) {
                 console.log("Du har gjettet riktig")
-        
+
             }
-            else{
-                alleRuter[index+1].focus();
+            else {
+                alleRuter[index + 1].focus();
             }
 
             boks.setAttribute("disabled", true);
-            
+
         });
     }
 

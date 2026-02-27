@@ -1,4 +1,4 @@
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,30 +7,45 @@ body{
     gap: 20px;
 }
 
-h1{
-    border-bottom: 1px solid black;
+h1 {
+    text-align: center;
+    width: 50%;
+    border-bottom: 3px solid purple;
+    font-size: 60px;
+    color: plum;
+    text-shadow: 4px 4px 0 purple;
 }
 
-#container{
+#container {
     display: grid;
     grid-template-columns: repeat(5, 60px);
     grid-auto-rows: 60px;
     gap: 10px;
 }
 
-.rute{
+.rute {
     border: 2px solid gray;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
+    caret-color: transparent;
+
 }
 
-#keyboard{
+.rute:focus {
+    outline: none;
+    border: 3px solid purple;
+    background-color: rgb(217, 197, 217, 0.6);
+
+
+}
+
+#keyboard {
     height: 200px;
 }
 
-.keyboard-rad{
+.keyboard-rad {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -39,11 +54,11 @@ h1{
     /* touch-action: manipulation; */
 }
 
-.keyboard-rad button{
+.keyboard-rad button {
     height: 50px;
-    width: 40px;
+    width: 50px;
     border: none;
-    background-color: lightgray;
+    background-color: rgb(217, 197, 217);
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -51,6 +66,6 @@ h1{
 
 }
 
-button.bred-tast{
+button.bred-tast {
     width: 80px;
 }
