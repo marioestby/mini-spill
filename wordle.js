@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     lagRuter();
     let fasit = "Tiger"
-    
+
     const alleRuter = document.querySelectorAll(".rute");
     alleRuter[0].focus();
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hent de 5 boksene på denne raden
         const start = radNummer * 5;
 
-        const radensBokser = Array.from(alleRuter).slice(start, start + 5); 
+        const radensBokser = Array.from(alleRuter).slice(start, start + 5);
         // lager en liste med alle inputene til boksene på samme rad
 
         // Setter sammen ordet brukeren gjettet
@@ -49,9 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log("Brukeren gjettet:", gjettOrd);
 
-        if (gjettOrd == fasit){
-            console.log("Du har gjettet riktig!")
-            
+        if (gjettOrd.toLowerCase() == fasit.toLowerCase()) {
+            console.log("Du har gjettet riktig!");
+            radensBokser.forEach(boks => {
+                boks.style.backgroundColor = "lightgreen";
+            });
         }
     }
 
