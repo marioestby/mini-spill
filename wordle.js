@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (gjettOrd == fasit){
                 console.log("Du har gjettet riktig")
+        
             }
             else{
                 alleRuter[index+1].focus();
