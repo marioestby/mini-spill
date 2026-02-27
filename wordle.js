@@ -72,6 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
             else{
                 alleRuter[index+1].focus();
             }
+
+            boks.setAttribute("disabled", true);
             
         });
     }
