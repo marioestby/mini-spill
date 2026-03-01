@@ -1,10 +1,10 @@
-body {
-    height: 100vh;
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    max-height: 100vh;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 60px);
     grid-auto-rows: 60px;
-    gap: 10px;
+    gap: 5px;
 }
 
 .rute {
@@ -48,9 +48,9 @@ h1 {
 .keyboard-rad {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 7px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     /* touch-action: manipulation; */
 }
 
