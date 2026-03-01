@@ -44,14 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function sjekkGjett(index) {
         const radNummer = Math.floor(index / 5);
-
-        // Hent de 5 boksene på denne raden
         const start = radNummer * 5;
 
         const radensBokser = Array.from(alleRuter).slice(start, start + 5);
-        // lager en liste med alle inputene til boksene på samme rad
 
-        // Setter sammen ordet brukeren gjettet
         const gjettOrd = radensBokser.map(boks => boks.value).join("");
 
         console.log("Brukeren gjettet:", gjettOrd);
