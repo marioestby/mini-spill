@@ -4,17 +4,30 @@
 <head>
 
     <link rel="stylesheet" href="trepaarad.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="trepaarad.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tre på tad!</title>
+
+    
 </head>
 
 <body>
 
     <header>
-
+        <nav>
+            <a href="">Dino spill</a>
+            <a href="trepaarad.html">Tre på rad</a>
+            <a href="wordle.html"><b>Dagens:</b> Wordle</a>
+            <a href="index.html" class="home-icon">
+                <i class="fa-regular fa-house"></i>
+            </a>
+        </nav>
     </header>
 
     <section>
@@ -41,12 +54,19 @@
 
             <div class="boks hoyre">
                 <h2>Regler</h2>
-                <p> <div class="bold">Start:</div> Spillerne velger hver sin figur (X eller O).
-                    <div class="bold">Trekk: </div>Man setter ett symbol i en tom rute per tur.
-                    <div class="bold">Vinner:</div> Førstemann med tre symboler i en ubrutt linje (horisontalt, vertikalt eller diagonalt)
-                    vinner.
-                    <div class="bold">Uavgjort:</div> Hvis alle 9 rutene fylles uten at noen har tre på rad, ender spillet uavgjort. </p>
+                <p>
+                <div class="bold">Start:</div> Spillerne velger hver sin figur (X eller O).
+                <div class="bold">Trekk: </div>Man setter ett symbol i en tom rute per tur.
+                <div class="bold">Vinner:</div> Førstemann med tre symboler i en ubrutt linje (horisontalt, vertikalt
+                eller diagonalt)
+                vinner.
+                <div class="bold">Uavgjort:</div> Hvis alle 9 rutene fylles uten at noen har tre på rad, ender spillet
+                uavgjort. </p>
             </div>
+        </div>
+
+        <div class="knapp">
+            <button conclick="resetSpill()">Start på nytt </button>
         </div>
     </section>
 
@@ -54,7 +74,7 @@
 
     </footer>
 
-
+    <script src="trepaarad.js"></script>
 </body>
 
 </html>
