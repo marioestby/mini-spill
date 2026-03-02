@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     lagRuter();
-    let fasit = "Tiger"
+    const ordliste = [
+        "light", "chair", "bread", "storm", "plant",
+        "smile", "blood", "clean", "floor", "grass",
+        "heart", "knife", "lemon", "money", "night",
+        "ocean", "peace", "river", "sugar", "tiger",
+        "angel", "beach", "brain", "brick", "chess",
+        "child", "lover", "clock", "cloud", "coast",
+        "cream", "dance", "death", "dream", "dress",
+        "drink", "earth", "faith", "fault", "feast",
+        "field", "fifth", "first", "flame", "flash",
+        "float", "flour", "force", "frost", "fruit"
+    ];
+    const fasit = ordliste[Math.floor(Math.random() * ordliste.length)];
+
+    console.log(fasit)
 
     const alleRuter = document.querySelectorAll(".rute");
     alleRuter[0].focus();
@@ -71,18 +85,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 boks.style.color = "white"
             }
 
-            if (gjettOrd == fasit) {
-                console.log("Du har gjettet riktig")
-
-            }
-            else {
-                alleRuter[index + 1].focus();
-            }
-
             boks.setAttribute("disabled", true);
 
+            const tast = document.querySelector(`button[data-key="${bokstav}"]`);
+            if (tast) {
+                if (bokstav === fasitLower[i]) {
+                    tast.style.backgroundColor = "darkseagreen";
+                    tast.style.color = "white";
+                } else if (fasitLower.includes(bokstav) && tast.style.backgroundColor !== "darkseagreen") {
+                    tast.style.backgroundColor = "gold";
+                    tast.style.color = "white";
+                } else if (tast.style.backgroundColor !== "darkseagreen" && tast.style.backgroundColor !== "gold") {
+                    tast.style.backgroundColor = "gray";
+                    tast.style.color = "white";
+                }
+            }
+
         });
+
+        function visPopup(vant) {
+            const popup = document.getElementById("popup");
+            document.getElementById("popup-tittel").textContent = vant ? "🎉 Du vant!" : "😢 Du tapte!";
+            document.getElementById("popup-tekst").textContent = vant ? "Bra jobba!" : `Fasiten var: ${fasit.toUpperCase()}`;
+            popup.style.display = "block";
+        }
+
+        if (gjettOrd.toLowerCase() === fasitLower) {
+            visPopup(true);
+        } else if (radNummer === 5) {
+            visPopup(false);
+        } else {
+            alleRuter[index + 1].focus();
+        }
     }
+
 
 });
 

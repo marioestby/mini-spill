@@ -69,3 +69,39 @@ h1 {
 button.bred-tast {
     width: 80px;
 }
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 3px solid purple;
+    border-radius: 12px;
+    padding: 30px 50px;
+    text-align: center;
+    box-shadow: 6px 6px 0 plum;
+    z-index: 1;
+}
+
+#popup h2 {
+    color: plum;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+#popup p {
+    color: purple;
+    margin-bottom: 16px;
+}
+
+#popup button {
+    padding: 8px 24px;
+    background: plum;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
