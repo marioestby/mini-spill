@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alleRuter[0].focus();
 
     function lagRuter() {
-        const container = document.getElementById("container");
+        const container = document.getElementById("container-grid");
 
         for (let i = 0; i < 30; i++) {
             let rute = document.createElement("input");
@@ -35,21 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     alleRuter.forEach((rute, index) => {
         rute.addEventListener("keydown", (event) => {
-            if (event.key == "Enter") {
-                if ((index + 1) % 5 == 0) {
-                    console.log("Brukeren har gjettet et ord, og er på rute", index + 1)
-                    sjekkGjett(index)
-                }
-                else {
-                    const nesteRute = alleRuter[index + 1];
-                    if (nesteRute) nesteRute.focus();
-                }
-            }
-            if (event.key == "Backspace") {
-                if (alleRuter[index].value === "") {
+            if (event.key == "Backspace" && rute.value === "") {
                     event.preventDefault();
                     const forrigeRute = alleRuter[index - 1];
                     if (forrigeRute) forrigeRute.focus();
+                
+            }
+            else {
+                if (event.key == "Enter" && (index + 1) % 5 == 0 && rute.value){
+                    console.log("Brukeren har gjettet et ord, og er på rute", index + 1)
+                    sjekkGjett(index)
+                } else if ((index + 1) % 5 != 0 && event.key.match(/^[a-zA-Z]$/)) {
+                    event.preventDefault();
+                    rute.value = event.key
+                    const nesteRute = alleRuter[index + 1];
+                    if (nesteRute) nesteRute.focus();
                 }
             }
         });

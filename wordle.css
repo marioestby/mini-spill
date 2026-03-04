@@ -17,7 +17,7 @@ h1 {
     text-shadow: 4px 4px 0 purple;
 }
 
-#container {
+#container-grid {
     display: grid;
     grid-template-columns: repeat(5, 60px);
     grid-auto-rows: 60px;
@@ -52,7 +52,6 @@ h1 {
     gap: 7px;
     width: 100%;
     margin-bottom: 7px;
-    /* touch-action: manipulation; */
 }
 
 .keyboard-rad button {
@@ -105,4 +104,67 @@ button.bred-tast {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+
+@media (width < 600px) {
+    .keyboard-rad button {
+        height: 50px;
+        width: 45px;
+    }
+
+    button.bred-tast {
+        width: 70px;
+        font-size: 10px;
+    }
+
+}
+
+@media (width < 530px) {
+    .keyboard-rad button {
+        height: 55px;
+        width: 40px;
+    }
+
+    button.bred-tast {
+        width: 60px;
+
+    }
+
+}
+
+@media (width < 470px) {
+    .keyboard-rad button {
+        height: 55px;
+        width: 35px;
+    }
+
+    button.bred-tast {
+        width: 55px;
+
+    }
+
+    h1{
+        font-size: 50px ;
+    }
+
+}
+
+@media (width < 420px) {
+
+    #container-grid {
+        grid-template-columns: repeat(5, 55px);
+        grid-auto-rows: 55px;
+    }
+
+    .keyboard-rad button {
+        height: 55px;
+        width: 30px;
+    }
+
+    button.bred-tast {
+        width: 40px;
+
+    }
+
 }
