@@ -1,3 +1,6 @@
+body{
+    background-color: #fdf0fe;
+}
 section {
     display: flex;
     justify-content: center;
