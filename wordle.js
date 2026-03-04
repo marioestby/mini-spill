@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(rute);
         }
 
-        // Legg til event listeners ETTER alle ruter er laget
     }
 
 
