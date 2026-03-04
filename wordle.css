@@ -6,12 +6,20 @@ section {
     gap: 15px;
     max-height: 100vh;
     padding-top: 50px;
+    position: relative;
 }
 
-h1 {
-    text-align: center;
-    width: 50%;
+.tittel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 40%;
     border-bottom: 3px solid purple;
+
+}
+
+h1{
     font-size: 60px;
     color: plum;
     text-shadow: 4px 4px 0 purple;
@@ -106,6 +114,52 @@ button.bred-tast {
     cursor: pointer;
 }
 
+#spilleregler-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#spilleregler-knapp {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: plum;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 purple;
+}
+
+#spilleregler-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 3px solid purple;
+    border-radius: 12px;
+    padding: 16px;
+    width: 220px;
+    box-shadow: 5px 5px 0 plum;
+    z-index: 100;
+    font-size: 14px;
+    color: purple;
+    line-height: 1.8;
+}
+
+#spilleregler-wrapper:hover #spilleregler-popup {
+    display: block;
+}
+
+@media (width < 820px) {
+    .tittel{
+        width: 330px;
+    }
+    
+}
+
 
 @media (width < 600px) {
     .keyboard-rad button {
@@ -144,8 +198,12 @@ button.bred-tast {
 
     }
 
-    h1{
-        font-size: 50px ;
+    h1 {
+        font-size: 50px;
+    }
+
+    #spilleregler-popup{
+        width: 200px;
     }
 
 }
