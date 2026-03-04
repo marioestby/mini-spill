@@ -58,5 +58,8 @@ function resetSpill() {
     gameOver = false;
     ruter.forEach(rute => {
         rute.textContent = "";
+        rute.style.fontSize = "";
+        rute.style.fontWeight = "";
+        rute.style.color = "";
     });
 }
