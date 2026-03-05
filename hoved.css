@@ -11,8 +11,7 @@
 }
 
 
-section>*,
-footer>* {
+section>* {
   max-width: 1200px;
   margin: auto;
   width: 100%;
@@ -35,10 +34,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-.logo>i {
-  font-size: 50px;
 }
 
 h2>span {
@@ -68,8 +63,11 @@ h1 {
   min-height: 100vh;
   background-color: #fdf0fe;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 100px;
+  gap: 20px;
 
 }
 
@@ -110,4 +108,8 @@ h1 {
   background-size: cover;
 
 
+}
+
+footer{
+  background-color: purple;
 }
