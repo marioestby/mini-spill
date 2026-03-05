@@ -75,13 +75,11 @@ nav {
   flex-wrap: wrap;
 }
 
-nav a,
-.tilbake i{
+a{
   transition: transform 0.2s ease;
 }
 
-nav a:hover,
-.tilbake i:hover{
+a:hover{
   transform: scale(1.1);
 
 }

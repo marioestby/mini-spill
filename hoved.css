@@ -67,14 +67,7 @@ h1 {
   width: 350px;
   border: 3px solid purple;
   border-radius: 30px;
-  transition: transform 0.5s ease;
   box-shadow: 6px 7px 0 #f1a1f0;
-}
-
-.spill:hover {
-  transform: scale(1.1);
-
-
 }
 
 .trepaarad {
