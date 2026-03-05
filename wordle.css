@@ -7,8 +7,8 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    padding-top: 20px;
     max-height: 100vh;
-    padding-top: 50px;
     position: relative;
 }
 
@@ -24,7 +24,7 @@ section {
 
 h1{
     font-size: 60px;
-    color: plum;
+    color: #f1a1f0;
     text-shadow: 4px 4px 0 purple;
 }
 
@@ -49,7 +49,7 @@ h1{
 .rute:focus {
     outline: none;
     border: 3px solid purple;
-    background-color: rgb(217, 197, 217, 0.6);
+    background-color: #f1a1f080;
 
 
 }
@@ -70,7 +70,7 @@ h1{
     height: 50px;
     width: 50px;
     border: none;
-    background-color: rgb(217, 197, 217);
+    background-color: #f1a1f0;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -93,7 +93,7 @@ button.bred-tast {
     border-radius: 12px;
     padding: 30px 50px;
     text-align: center;
-    box-shadow: 6px 6px 0 plum;
+    box-shadow: 6px 6px 0 #f1a1f0;
     z-index: 1;
 }
 
@@ -110,7 +110,7 @@ button.bred-tast {
 
 #popup button {
     padding: 8px 24px;
-    background: plum;
+    background: #f1a1f0;
     border: none;
     border-radius: 6px;
     color: white;
@@ -127,7 +127,7 @@ button.bred-tast {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: plum;
+    background: #f1a1f0;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -146,7 +146,7 @@ button.bred-tast {
     border-radius: 12px;
     padding: 16px;
     width: 220px;
-    box-shadow: 5px 5px 0 plum;
+    box-shadow: 5px 5px 0 #f1a1f0;
     z-index: 100;
     font-size: 14px;
     color: purple;
