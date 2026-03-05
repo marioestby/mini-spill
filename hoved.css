@@ -10,21 +10,12 @@
 
 }
 
-
-section>* {
-  max-width: 1200px;
-  margin: auto;
-  width: 100%;
-  z-index: 4;
-}
-
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: purple;
-  padding: 30px 0;
+  padding: 30px;
   font-size: 20px;
 
 
@@ -56,6 +47,7 @@ h1 {
   display: flex;
   align-items: center;
   height: 100%;
+  margin: 30px;
 }
 
 
@@ -112,4 +104,22 @@ h1 {
 
 footer{
   background-color: purple;
+}
+
+@media (width < 625px) {
+  h1{
+    font-size: 50px;
+  }
+  
+}
+
+@media (width < 500px) {
+  h1{
+    font-size: 40px;
+  }
+
+  #katalog{
+    padding: 50px;
+  }
+  
 }

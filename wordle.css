@@ -7,8 +7,8 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    padding-top: 20px;
-    max-height: 100vh;
+    margin-top: -40px;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -210,6 +210,10 @@ button.bred-tast {
         width: 200px;
     }
 
+    .tittel{
+        gap: 30px;
+    }
+
 }
 
 @media (width < 420px) {
@@ -227,6 +231,10 @@ button.bred-tast {
     button.bred-tast {
         width: 40px;
 
+    }
+
+    .tittel{
+        gap: 20px;
     }
 
 }
