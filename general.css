@@ -82,9 +82,3 @@ nav a:hover {
   transform: scale(1.1);
 
 }
-
-.home-icon {
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-}
