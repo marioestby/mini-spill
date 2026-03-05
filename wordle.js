@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function visPopup(vant) {
             const popup = document.getElementById("popup");
-            document.getElementById("popup-tittel").textContent = vant ? "🎉 Du vant!" : "😢 Du tapte!";
+            document.getElementById("popup-tittel").textContent = vant ? "🎉 Du gjettet riktig!" : "😢 Du tapte!";
             document.getElementById("popup-tekst").textContent = vant ? "Bra jobba!" : `Fasiten var: ${fasit.toUpperCase()}`;
             popup.style.display = "block";
         }

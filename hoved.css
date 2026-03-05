@@ -1,23 +1,3 @@
-
-
- 
-header {
-  background-color: rgb(242, 116, 245);
-  color: white;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  flex-wrap: wrap;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 200;
-
-}
-
 .logo {
   width: 150px;
 }
@@ -59,6 +39,115 @@ footer {
 
 }
 
-section{
-    background-image: url(bilder/bakrun.jpg);
+.hero {
+  height: 100vh;
+  background-image: url(bilder/bakgrunn.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: purple;
+  
+}
+
+
+section>*,
+footer>* {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  z-index: 4;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: purple;
+  padding: 50px 0;
+  font-size: 20px;
+
+
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+  text-transform: uppercase;
+  padding: 50px;
+  border: 4px solid purple;
+  max-width: 660px;
+}
+
+.introboks {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+i {
+  font-size: 50px;
+}
+
+#katalog {
+  min-height: 100vh;
+  background-color: #fdf0fe;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.spill{
+  height: 450px;
+  width: 350px;
+  border: 3px solid purple;
+  border-radius: 30px;
+  transition: transform 0.5s ease;
+  box-shadow: 0 2px 4px plum;
+}
+
+.spill:hover{
+  transform: scale(1.1);
+
+  
+}
+.trepaarad{
+  background-image: url(bilder/trepaarad.png);
+  background-position: top;
+  background-size: cover;
+  
+
+}
+
+.wordle{
+  background-image: url(bilder/wordle.png);
+  background-position: top;
+  background-size: cover;
+  
+
+}
+
+.dino{
+  background-image: url(bilder/dino.jpg);
+  background-position: top;
+  background-size: cover;
+  
+
 }
