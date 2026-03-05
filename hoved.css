@@ -1,43 +1,3 @@
-.logo {
-  width: 150px;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  transition: transform 0.2s ease;
-  padding-bottom: 10px;
-}
-
-nav a:hover {
-  transform: scale(1.1);
-
-}
-
-.home-icon {
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-}
-
-footer {
-  background-color: rgb(10 34 56);
-  color: white;
-  height: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  position: relative;
-  z-index: 200;
-  width: 100%;
-  gap: 15px;
-
-}
 
 .hero {
   height: 100vh;
@@ -47,7 +7,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: purple;
-  
+
 }
 
 
@@ -77,14 +37,24 @@ ul {
   gap: 20px;
 }
 
+.logo>i {
+  font-size: 50px;
+}
+
+h2>span {
+  color: rgb(216, 5, 244);
+  font-style: italic;
+  font-size: 35px;
+}
+
 h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
   font-size: 70px;
   text-transform: uppercase;
   padding: 50px;
   border: 4px solid purple;
   max-width: 660px;
+  color: #f1a1f0;
+  text-shadow: 4px 4px 0 purple;
 }
 
 .introboks {
@@ -93,53 +63,51 @@ h1 {
   height: 100%;
 }
 
-.logo > i {
-  font-size: 50px;
-}
 
 #katalog {
   min-height: 100vh;
   background-color: #fdf0fe;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 
 }
 
-.spill{
+.spill {
   height: 450px;
   width: 350px;
   border: 3px solid purple;
   border-radius: 30px;
   transition: transform 0.5s ease;
-  box-shadow: 0 2px 4px plum;
+  box-shadow: 6px 7px 0 #f1a1f0;
 }
 
-.spill:hover{
+.spill:hover {
   transform: scale(1.1);
 
-  
+
 }
-.trepaarad{
+
+.trepaarad {
   background-image: url(bilder/trepaarad.png);
   background-position: top;
   background-size: cover;
-  
+
 
 }
 
-.wordle{
+.wordle {
   background-image: url(bilder/wordle.png);
   background-position: top;
   background-size: cover;
-  
+
 
 }
 
-.dino{
+.dino {
   background-image: url(bilder/dino.jpg);
   background-position: top;
   background-size: cover;
-  
+
 
 }

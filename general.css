@@ -66,6 +66,7 @@ header {
 
 header > .tilbake > i {
   font-size: 40px;
+  color: rgb(216, 5, 244);
 }
 
 nav {
@@ -80,5 +81,18 @@ nav a {
 
 nav a:hover {
   transform: scale(1.1);
+
+}
+
+footer {
+  background-color: #f1a1f0;
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  gap: 15px;
 
 }
