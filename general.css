@@ -55,7 +55,7 @@ a {
 header {
   background-color: #f1a1f0;
   color: white;
-  height: 70px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,8 +64,8 @@ header {
 
 }
 
-.logo {
-  width: 150px;
+header > .tilbake > i {
+  font-size: 40px;
 }
 
 nav {
@@ -76,7 +76,6 @@ nav {
 
 nav a {
   transition: transform 0.2s ease;
-  padding-bottom: 10px;
 }
 
 nav a:hover {
