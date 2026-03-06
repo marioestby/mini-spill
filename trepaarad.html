@@ -29,6 +29,12 @@
             <a href="trepaarad.html">Tre på rad</a>
             <a href="wordle.html"><b>Dagens:</b> Wordle</a>
         </nav>
+
+         <div class="mork-lys-knapper">
+            <i class="fa-regular fa-moon" onclick="mork()"></i>
+            <i class="fa-regular fa-sun" onclick="lys()"></i>
+        </div>
+
     </header>
 
     
@@ -86,6 +92,15 @@
         <p>Laget av Mari, Jonathan, Emilie T</p>
     </footer>
     <script src="trepaarad.js"></script>
+    <script>
+
+        function mork() {
+            document.body.classList.add("dark");
+        }
+        function lys() {
+            document.body.classList.remove("dark");
+        }
+    </script>
 </body>
 
 </html>

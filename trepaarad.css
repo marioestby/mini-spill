@@ -1,5 +1,8 @@
 body {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
     background-color: #fdf0fe;
 =======
     background-color: var(--lys-bakgrunn);
@@ -96,7 +99,10 @@ h2 {
 button {
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
     background-color: #f1a1f0;
 =======
     background-color: var(--rosa);
@@ -110,6 +116,7 @@ button {
 .knapp {
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 }
 
@@ -179,6 +186,48 @@ body.dark footer {
 
 body.dark footer a {
     color: #f9c8ff;
+=======
+}
+
+body.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark h1,
+body.dark h2 {
+    color: #e879f9;
+}
+
+body.dark .boks {
+    background-color: #6b21a8;
+}
+
+body.dark .rute {
+    background-color: #5d1f5d;
+   
+}
+
+body.dark .blaa {
+    background-color: #1e3a5f;
+}
+
+.mork-lys-knapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.mork-lys-knapper i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #c026d3;
+}
+
+body.dark .mork-lys-knapper i {
+    color: wheat;
+>>>>>>> Stashed changes
 }
 
 @media (max-width: 750px) {
@@ -198,5 +247,8 @@ body.dark footer a {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
