@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
     alleRuter.forEach((rute, index) => {
         rute.addEventListener("keydown", (event) => {
             if (event.key == "Backspace" && rute.value === "") {
-                    event.preventDefault();
-                    const forrigeRute = alleRuter[index - 1];
-                    if (forrigeRute) forrigeRute.focus();
-                
+                event.preventDefault();
+                const forrigeRute = alleRuter[index - 1];
+                if (forrigeRute) forrigeRute.focus();
+
             }
             else {
-                if (event.key == "Enter" && (index + 1) % 5 == 0 && rute.value){
+                if (event.key == "Enter" && (index + 1) % 5 == 0 && rute.value) {
                     console.log("Brukeren har gjettet et ord, og er på rute", index + 1)
                     sjekkGjett(index)
                 } else if ((index + 1) % 5 != 0 && event.key.match(/^[a-zA-Z]$/)) {
@@ -117,6 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
             alleRuter[index + 1].focus();
         }
     }
+
+    document.querySelectorAll(".keyboard-rad button").forEach(tast => {
+        tast.addEventListener("click", () => {
+            const varsel = document.getElementById("tastatur-varsel");
+            varsel.style.display = "block";
+            clearTimeout(varsel._timeout);
+            varsel._timeout = setTimeout(() => {
+                varsel.style.display = "none";
+            }, 2500);
+        });
+    });
 
 
 });
