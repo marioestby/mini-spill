@@ -1,6 +1,7 @@
-body{
-    background-color: #fdf0fe;
+body {
+    background-color: var(--lys-bakgrunn);
 }
+
 section {
     display: flex;
     justify-content: center;
@@ -11,7 +12,7 @@ section {
     position: relative;
 }
 
-.tittel{
+.tittel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,9 +22,9 @@ section {
 
 }
 
-h1{
+h1 {
     font-size: 60px;
-    color: #f1a1f0;
+    color: var(--rosa);
     text-shadow: 4px 4px 0 purple;
 }
 
@@ -48,7 +49,7 @@ h1{
 .rute:focus {
     outline: none;
     border: 3px solid purple;
-    background-color: #f1a1f080;
+    background-color: var(--rosa)80;
 
 
 }
@@ -69,7 +70,7 @@ h1{
     height: 50px;
     width: 50px;
     border: none;
-    background-color: #f1a1f0;
+    background-color: var(--rosa);
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -92,7 +93,7 @@ button.bred-tast {
     border-radius: 12px;
     padding: 30px 50px;
     text-align: center;
-    box-shadow: 6px 6px 0 #f1a1f0;
+    box-shadow: 6px 6px 0 var(--rosa);
     z-index: 1;
 }
 
@@ -109,7 +110,7 @@ button.bred-tast {
 
 #popup button {
     padding: 8px 24px;
-    background: #f1a1f0;
+    background: var(--rosa);
     border: none;
     border-radius: 6px;
     color: white;
@@ -126,7 +127,7 @@ button.bred-tast {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #f1a1f0;
+    background: var(--rosa);
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -145,7 +146,7 @@ button.bred-tast {
     border-radius: 12px;
     padding: 16px;
     width: 220px;
-    box-shadow: 5px 5px 0 #f1a1f0;
+    box-shadow: 5px 5px 0 var(--rosa);
     z-index: 100;
     font-size: 14px;
     color: purple;
@@ -157,10 +158,10 @@ button.bred-tast {
 }
 
 @media (width < 820px) {
-    .tittel{
+    .tittel {
         width: 330px;
     }
-    
+
 }
 
 
@@ -205,11 +206,11 @@ button.bred-tast {
         font-size: 50px;
     }
 
-    #spilleregler-popup{
+    #spilleregler-popup {
         width: 200px;
     }
 
-    .tittel{
+    .tittel {
         gap: 30px;
     }
 
@@ -232,7 +233,7 @@ button.bred-tast {
 
     }
 
-    .tittel{
+    .tittel {
         gap: 20px;
     }
 

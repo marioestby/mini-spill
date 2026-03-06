@@ -1,5 +1,5 @@
-body{
-    background-color: #fdf0fe;
+body {
+    background-color: var(--lys-bakgrunn);
 }
 
 .brett {
@@ -27,15 +27,15 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 70px;
-    text-shadow: 4px 4px 0 rgb(216, 5, 244);
-    color: #f1a1f0;
+    text-shadow: 4px 4px 0 var(--sterk-rosa);
+    color: var(--rosa);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .boks {
-    background-color: #f1a1f0;
+    background-color: var(--rosa);
     color: white;
     border-radius: 15px;
     width: 27%;
@@ -44,7 +44,7 @@ h1 {
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .innhold {
@@ -58,54 +58,54 @@ h1 {
 .venstre {
     font-size: 40px;
     font-weight: bold;
-    text-shadow: 4px 4px 0 rgb(216, 5, 244);
+    text-shadow: 4px 4px 0 var(--sterk-rosa);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .hoyre {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 40px;
-    text-shadow: 4px 4px 0 rgb(216, 5, 244);
+    text-shadow: 4px 4px 0 var(--sterk-rosa);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.boks p{
+.boks p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-button{
-    display:flex; 
-    justify-content:center; 
-    background-color: #f1a1f0;
+button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--rosa);
     color: white;
     border-radius: 15px;
     border: none;
-    margin-top:30px;  
+    margin-top: 30px;
 }
 
-.knapp{
-    display:flex; 
-    justify-content:center;   
+.knapp {
+    display: flex;
+    justify-content: center;
 
 }
 
-footer{
+footer {
     margin-top: 50px;
 }
 
@@ -128,5 +128,3 @@ footer{
     }
 
 }
-
-
