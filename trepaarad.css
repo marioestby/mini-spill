@@ -101,10 +101,12 @@ button{
 
 .knapp{
     display:flex; 
-    justify-content:center; 
-    
-    
+    justify-content:center;   
 
+}
+
+footer{
+    margin-top: 50px;
 }
 
 @media (max-width: 750px) {
@@ -124,6 +126,7 @@ button{
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
 }
 
 
