@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfingDino</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+        }
+
+        img{
+            display: block;
+            width: 100%;
+        }
+
+        *{box-sizing: border-box;
+        }
+
+        #spill {
+            height: 300px;
+            width: 900px;
+            border: 1px black solid;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #dino{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0px;
+            left: 80px;
+        }
+
+        #hinder {
+            width: 140px;
+            height: 90px;
+            position: absolute;
+            bottom: 0px;
+            left: 850px;
+        }
+
+        .score{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        .s{
+            display: flex;
+        }
+
+        .h{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spill">
+        <div id="dino"><img src="200.gif" alt="dino"></div>
+        <div id="hinder"><img src="tiburonBoss_zps49108ed3.gif" alt="hai"></div>
+    </div>
+    <div class="score">
+        <h3>score</h3>
+        <h3>highscore</h3>
+
+    </div>
+
+
+    <script>
+        const hinderElm = document.getElementById("hinder")
+        let venstre = 857
+        let xfart = -3
+        let highscore = 0
+
+        let btm = 0
+        let yfart = 10
+        const dinoElm = document.getElementById("dino")
+
+        function flyttHinder() {
+            venstre += xfart
+            hinderElm.style.left = venstre + "px"
+
+            if (venstre < -150) {
+                venstre = 900
+                highscore+=1
+                console.log(highscore)
+            }
+
+            // Gravitasjon:
+            yfart -= 0.2
+            // Endre posisjon ut i fra yfart:
+            btm += yfart
+            if (btm < 0) {
+                btm = 0
+                yfart = 0
+            }
+            dinoElm.style.bottom = btm + "px"
+
+            // Sjekk om det er en kollisjon nå:
+            sjekkKollisjon()
+
+        }
+        setInterval(flyttHinder, 10);
+
+
+
+        // Add event listener: Altså at når man klikker på elementet, så "skjer det noe":
+        document.addEventListener("keydown", function (event) {
+            // console.log("Du trykket på:", event.key)
+            if (event.key == "ArrowUp" && btm == 0) {
+                yfart = 8.5
+            }
+
+
+        }) // Merk at den får litt spesielle klammer her: sett musepekeren på hver av dem, og se hvor de begynner
+
+
+        function sjekkKollisjon() {
+            const overlapX = (venstre < 160) && (venstre + 120 > 80)
+            const overlapY = (btm < 20)
+
+            if (overlapX && overlapY) {
+                btm = 0
+                yfart = 0
+                venstre = 890
+                console.log("score", highscore)
+                //document.body.innerHTML.
+                highscore=0
+                document.body.style.backgroundColor = "red"
+                setTimeout(skiftTilGronn, 1000)
+                
+            }
+        }
+
+        function skiftTilGronn() {
+            document.body.style.backgroundColor = "pink"
+        }
+
+    </script>
+
+</body>
+
+</html>
