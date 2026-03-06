@@ -62,6 +62,16 @@ function resetSpill() {
     });
 }
 
+function visPopup(tittel, tekst) {
+    document.getElementById("popupTittel").textContent = tittel;
+    document.getElementById("popupTekst").textContent = tekst;
+    document.getElementById("vinnerPopup").style.display = "flex";
+}
+function lukkPopup() {
+    document.getElementById("vinnerPopup").style.display = "none";
+    resetSpill();
+}
+
 function mork() {
     document.body.classList.add("dark")
 }

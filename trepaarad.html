@@ -32,15 +32,15 @@
 
     </header>
 
-    
+
 
     <section>
 
         <div class="ikoner">
-        <i class="fa-regular fa-moon" onclick="mork()"></i>
-        <i class="fa-regular fa-sun" onclick="lys()"></i>
-    </div>
-    
+            <i class="fa-regular fa-moon" onclick="mork()"></i>
+            <i class="fa-regular fa-sun" onclick="lys()"></i>
+        </div>
+
         <h1> Tre på rad! </h1>
 
         <div class="innhold">
@@ -77,25 +77,26 @@
         <div class="knapp">
             <button onclick="resetSpill()">Start på nytt </button>
         </div>
+
+        <div id="vinnerPopup">
+            <div class="popup-boks">
+                <h2 id="popupTittel"></h2>
+                <p id="popupTekst"></p>
+                <button onclick="lukkPopup()">Spill igjen!</button>
+            </div>
+        </div>
     </section>
-    
+
     <footer>
-         <a class="logo" href="hoved.html">
+        <a class="logo" href="hoved.html">
             <i class="fa-solid fa-gamepad"></i>
             <h2>Spill<i>Mer</i></h2>
         </a>
         <p>Laget av Mari, Jonathan, Emilie T</p>
     </footer>
-    <script src="trepaarad.js"></script>
-    <script>
 
-        function mork() {
-            document.body.classList.add("dark");
-        }
-        function lys() {
-            document.body.classList.remove("dark");
-        }
-    </script>
+    <script src="trepaarad.js"></script>
+
 </body>
 
 </html>

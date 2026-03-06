@@ -113,6 +113,43 @@ footer {
     margin-top: 50px;
 }
 
+#vinnerPopup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-boks {
+    background: #fdf0fe;
+    border-radius: 24px;
+    padding: 40px 50px;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(216,5,244,0.35);
+}
+
+#popupTittel {
+    color: #f1a1f0;
+    font-size: 48px;
+    margin-top: 0;
+}
+
+#popupTekst {
+    font-size: 20px;
+    color: #7a2a7a;
+}
+
+body.dark .popup-boks {
+    background: #2a0d30;
+}
+
+body.dark #popupTekst {
+    color: #d0a0e0;
+}
+
 .ikoner {
     color: rgb(216, 5, 244);
     display: flex;
