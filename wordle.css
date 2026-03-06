@@ -124,12 +124,12 @@ button.bred-tast {
 }
 
 #spilleregler-knapp {
-    width: 36px;
-    height: 36px;
+    width: fit-content;
+    height: 50px;
     border-radius: 50%;
     background: var(--rosa);
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: bold;
     border: none;
     cursor: pointer;
