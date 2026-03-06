@@ -63,3 +63,10 @@ function resetSpill() {
         rute.style.color = "";
     });
 }
+
+function mork() {
+    document.body.classList.add("dark")
+}
+function lys() {
+    document.body.classList.remove("dark")
+}

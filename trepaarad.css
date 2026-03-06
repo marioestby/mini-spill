@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #fdf0fe;
 }
 
@@ -44,7 +44,7 @@ h1 {
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .innhold {
@@ -63,20 +63,20 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .hoyre {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 40px;
     text-shadow: 4px 4px 0 rgb(216, 5, 244);
@@ -84,29 +84,87 @@ h2{
     margin-bottom: 10px;
 }
 
-.boks p{
+.boks p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-button{
-    display:flex; 
-    justify-content:center; 
+button {
+    display: flex;
+    justify-content: center;
     background-color: #f1a1f0;
     color: white;
     border-radius: 15px;
     border: none;
-    margin-top:30px;  
+    margin-top: 30px;
 }
 
-.knapp{
-    display:flex; 
-    justify-content:center;   
-
+.knapp {
+    display: flex;
+    justify-content: center;
 }
 
-footer{
+
+
+footer {
     margin-top: 50px;
+}
+
+.ikoner{
+    color: rgb(216, 5, 244);
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;  
+    font-size: 30px;
+}
+
+.ikoner, .fa-regular {
+    padding-right: 50px;
+}
+
+body.dark {
+    background-color: #1a0d1b;
+    color: #f0d0f5;
+}
+
+body.dark .brett {
+    border-color: #9955aa;
+}
+
+body.dark .rute {
+    border-color: #6633aa;
+    background-color: #3a1a3e;
+}
+
+body.dark .blaa {
+    background-color: #1a2a3e;
+}
+
+body.dark .boks {
+    background-color: #5a1a6a;
+    color: #f0d0f5;
+}
+
+body.dark h1 {
+    color: #f9c8ff;
+    text-shadow: 4px 4px 0 #9900cc;
+}
+
+body.dark h2 {
+    text-shadow: 4px 4px 0 #9900cc;
+}
+
+body.dark button {
+    background-color: #8833aa;
+    color: #f9e8ff;
+}
+
+body.dark footer {
+    color: #d0a0e0;
+}
+
+body.dark footer a {
+    color: #f9c8ff;
 }
 
 @media (max-width: 750px) {
@@ -128,5 +186,3 @@ footer{
     }
 
 }
-
-
