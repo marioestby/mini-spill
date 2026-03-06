@@ -1,3 +1,13 @@
+/* Root på felles farger */
+
+:root {
+    --rosa: #f1a1f0;
+    --lys-bakgrunn: #fdf0fe;
+    --sterk-rosa: rgb(216, 5, 244);
+    --rosa-transparent: #f1a1f080;
+}
+
+
 /* Minimal css reset */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
