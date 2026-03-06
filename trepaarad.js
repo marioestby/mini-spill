@@ -28,15 +28,13 @@ ruter.forEach((rute, index) => {
         rute.style.color = currentPlayer === "X" ? "#08000f" : "#ffffff";
 
         if (sjekkVinner()) {
-            setTimeout(() => {
-            }, 100);
+            setTimeout(() => visPopup(`Spiller ${currentPlayer} vinner!`, "Gratulerer! Trykk for å starte på nytt."), 350);
             gameOver = true;
             return;
         }
 
         if (board.every(cell => cell !== "")) {
-            setTimeout(() => {
-            }, 100);
+            setTimeout(() => visPopup("Uavgjort!", "Ingen vant denne gangen. Prøv igjen!"), 350);
             gameOver = true;
             return;
         }
