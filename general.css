@@ -111,3 +111,10 @@ footer {
 .logo>i {
   font-size: 50px;
 }
+
+.logo > h2{
+  color: inherit;
+  text-shadow: none;
+  font-size: 24px;
+
+}
