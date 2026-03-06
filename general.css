@@ -1,6 +1,17 @@
+/* Root på felles farger */
+
+:root {
+  --rosa: #f1a1f0;
+  --lys-bakgrunn: #fdf0fe;
+  --sterk-rosa: rgb(216, 5, 244);
+  --rosa-transparent: #f1a1f080;
+}
+
+
 /* Minimal css reset */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset box-sizing to border-box for easier layout calculations */
 *,
 *::before,
@@ -11,7 +22,7 @@
 /* Remove default margins from all elements */
 * {
   margin: 0;
-    font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* Optional: Set a base font size and line height for the body */
@@ -51,9 +62,9 @@ a {
 }
 
 
- 
+
 header {
-  background-color: #f1a1f0;
+  background-color: var(--rosa);
   color: white;
   height: 75px;
   display: flex;
@@ -64,9 +75,9 @@ header {
 
 }
 
-header > .tilbake > i {
+header>.tilbake>i {
   font-size: 40px;
-  color: rgb(216, 5, 244);
+  color: var(--sterk-rosa);
 }
 
 nav {
@@ -75,17 +86,17 @@ nav {
   flex-wrap: wrap;
 }
 
-a{
+a {
   transition: transform 0.2s ease;
 }
 
-a:hover{
+a:hover {
   transform: scale(1.1);
 
 }
 
 footer {
-  background-color: #f1a1f0;
+  background-color: var(--rosa);
   color: white;
   height: 150px;
   display: flex;
@@ -99,4 +110,11 @@ footer {
 
 .logo>i {
   font-size: 50px;
+}
+
+.logo > h2{
+  color: inherit;
+  text-shadow: none;
+  font-size: 24px;
+
 }
